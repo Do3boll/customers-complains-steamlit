@@ -10,7 +10,7 @@ from huggingface_hub import InferenceClient
 
 logger = logging.getLogger("customer_intelligence.llm")
 
-HF_TOKEN = os.getenv("HF_TOKEN") or os.getenv("HUGGINGFACEHUB_API_TOKEN") or "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"
+HF_TOKEN = os.getenv("HF_TOKEN") or os.getenv("HUGGINGFACEHUB_API_TOKEN") 
 HF_MODEL_ID = os.getenv("HF_MODEL_ID", "openai/gpt-oss-20b")
 HF_PROVIDER = os.getenv("HF_PROVIDER", "auto") 
 
