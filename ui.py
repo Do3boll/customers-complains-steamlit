@@ -11,7 +11,7 @@ Make sure the API is running first:
 import requests
 import streamlit as st
 
-API_URL = "0.0.0.0:8000"
+API_URL = "0.0.0.0"
 
 st.set_page_config(page_title="Filed — Say what happened.", page_icon="⬛", layout="wide")
 
