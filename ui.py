@@ -11,7 +11,7 @@ Make sure the API is running first:
 import requests
 import streamlit as st
 
-API_URL = "https://customers-complains-steamlit.onrender.com"
+API_URL = "https://customers-complains-steamlit.onrender.com/process-customer-message"
 
 st.set_page_config(page_title="Filed — Say what happened.", page_icon="⬛", layout="wide")
 
