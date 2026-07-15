@@ -1,0 +1,51 @@
+id,message,category,ambiguous,expected_intent,expected_priority,expected_entities,expected_routing
+1,"I was charged twice for the same transaction and I need this resolved immediately. If not, I will escalate.",billing_dispute,no,"Billing Issue;Complaint",High,"duplicate transaction",Billing Department
+2,"Someone tried to log into my account from a different country. I did not authorize this.",fraud_suspicion,no,"Fraud Suspicion",Critical,"unauthorized login",Fraud Team
+3,"Can you tell me my current account balance?",account_query,no,"Balance Inquiry",Low,"account balance",Support Team
+4,"I sent a transfer to my brother two days ago and he still hasn't received it.",financial_dispute,no,"Transfer Delay",Medium,"transfer;2 days",Support Team
+5,"This is the third time I'm contacting you about the same issue and nothing has been done!",complaint,no,"Complaint;Escalation Request",High,"repeated contact",Support Team
+6,"Hi, I need help.",ambiguous,yes,"Unclear",Low,"",Support Team
+7,"My card is not working at ATMs.",account_query,no,"Card Issue",Medium,"ATM;card",Support Team
+8,"I noticed a $500 withdrawal I never made. Please freeze my account now.",fraud_suspicion,no,"Fraud Suspicion;Urgent Action",Critical,"$500 withdrawal",Fraud Team
+9,"What are the fees for international wire transfers?",account_query,no,"Fee Inquiry",Low,"international wire transfer",Support Team
+10,"I want to close my account and get a refund for the annual fee.",account_query,no,"Account Closure;Refund Request",Medium,"annual fee;account closure",Billing Department
+11,"There's an issue.",ambiguous,yes,"Unclear",Low,"",Support Team
+12,"My salary was supposed to be deposited today but I don't see it.",financial_dispute,no,"Missing Deposit",High,"salary deposit",Billing Department
+13,"I keep getting declined even though I have enough balance, this is frustrating and urgent.",billing_dispute,no,"Card Decline;Complaint",High,"declined transaction",Support Team
+14,"Can I get a copy of my last 6 months statements?",account_query,no,"Statement Request",Low,"6 months statement",Support Team
+15,"I think my card details got leaked online, what should I do?",fraud_suspicion,no,"Fraud Suspicion",Critical,"leaked card details",Fraud Team
+16,"Not happy with the service at all.",ambiguous,yes,"Complaint",Low,"",Support Team
+17,"I applied for a loan two weeks ago and haven't heard back, I need an update urgently since I have a deadline.",account_query,no,"Loan Status Inquiry",High,"loan application;2 weeks",Loan Department
+18,"Why was my transaction declined at checkout yesterday?",billing_dispute,no,"Transaction Decline Inquiry",Medium,"declined transaction;yesterday",Support Team
+19,"Please cancel my subscription and refund the last payment, it's been charged again by mistake.",billing_dispute,no,"Subscription Cancellation;Refund Request",Medium,"subscription;refund",Billing Department
+20,"I got an email asking me to confirm my password, is this legit?",fraud_suspicion,no,"Phishing Suspicion",High,"phishing email",Fraud Team
+21,"Just checking in.",ambiguous,yes,"Unclear",Low,"",Support Team
+22,"My joint account shows a transaction I don't recognize and my spouse says it wasn't them either.",fraud_suspicion,no,"Fraud Suspicion",Critical,"unrecognized transaction;joint account",Fraud Team
+23,"How do I update my mailing address on file?",account_query,no,"Profile Update",Low,"mailing address",Support Team
+24,"I was double billed for my credit card annual fee and also charged a late fee I shouldn't have gotten, please fix both issues fast.",billing_dispute,no,"Billing Issue;Late Fee Dispute",High,"double billing;late fee",Billing Department
+25,"Can someone help me?",ambiguous,yes,"Unclear",Low,"",Support Team
+26,"I need to dispute a charge from a merchant I never purchased from, and I also want to report my card as potentially compromised.",fraud_suspicion,no,"Chargeback Request;Fraud Suspicion",Critical,"merchant dispute;compromised card",Fraud Team
+27,"What's the interest rate on your savings account?",account_query,no,"Product Inquiry",Low,"savings account;interest rate",Support Team
+28,"My mortgage payment was deducted twice this month, I need this fixed before the due date for my other bills.",financial_dispute,no,"Billing Issue",High,"mortgage;duplicate deduction",Billing Department
+29,"This app keeps crashing when I try to log in.",account_query,no,"Technical Issue",Medium,"app crash;login",Technical Support
+30,"I'm not sure what's going on with my account, something seems off but I can't tell what.",ambiguous,yes,"Unclear",Medium,"",Support Team
+31,"I received a notification about a large transfer I never initiated, please block it if not too late.",fraud_suspicion,no,"Fraud Suspicion;Urgent Action",Critical,"unauthorized transfer",Fraud Team
+32,"How long does it take for a check deposit to clear?",account_query,no,"Process Inquiry",Low,"check deposit",Support Team
+33,"I was told my refund would arrive in 3 days but it's been 10 days now and I'm losing patience.",billing_dispute,no,"Refund Delay;Complaint",High,"refund;10 days",Billing Department
+34,"Can you explain the overdraft fee on my statement?",account_query,no,"Fee Inquiry",Low,"overdraft fee",Support Team
+35,"Please help, not sure who to contact.",ambiguous,yes,"Unclear",Low,"",Support Team
+36,"My debit card was declined twice today and then I got a text saying my account might be locked, is something wrong?",account_query,no,"Card Issue;Account Status Inquiry",Medium,"card decline;account lock",Support Team
+37,"I want to file a formal complaint about being on hold for over an hour yesterday.",complaint,no,"Complaint",Medium,"hold time;1 hour",Support Team
+38,"There is a strange charge from a country I have never visited, please investigate immediately.",fraud_suspicion,no,"Fraud Suspicion",Critical,"foreign charge",Fraud Team
+39,"What documents do I need to open a business account?",account_query,no,"Product Inquiry",Low,"business account;documents",Support Team
+40,"My account.",ambiguous,yes,"Unclear",Low,"",Support Team
+41,"I was charged an ATM fee even though your website says your ATMs are free, please refund and explain.",billing_dispute,no,"Fee Dispute",Medium,"ATM fee",Billing Department
+42,"Someone used my card details to make an online purchase I never approved and I want it reversed immediately.",fraud_suspicion,no,"Fraud Suspicion;Chargeback Request",Critical,"unauthorized online purchase",Fraud Team
+43,"Can I increase my credit card limit?",account_query,no,"Credit Limit Request",Low,"credit limit",Support Team
+44,"I need my paycheck deposit issue fixed today, it's urgent because rent is due and I also want to know why my last statement had an unexplained fee.",financial_dispute,no,"Missing Deposit;Fee Dispute",High,"paycheck deposit;unexplained fee",Billing Department
+45,"Not sure if this is the right place to ask this.",ambiguous,yes,"Unclear",Low,"",Support Team
+46,"My account got locked after I entered the wrong password a few times, how do I unlock it?",account_query,no,"Account Lockout",Medium,"account lockout;password",Support Team
+47,"I keep receiving suspicious texts asking me to verify my account, I'm worried someone is trying to hack me and I want my account monitored closely.",fraud_suspicion,no,"Phishing Suspicion;Fraud Suspicion",High,"suspicious texts",Fraud Team
+48,"What's your customer service phone number?",account_query,no,"General Inquiry",Low,"phone number",Support Team
+49,"idk something with my card and also a payment I don't remember making, kind of confusing",ambiguous,yes,"Unclear;Possible Fraud",Medium,"unclear payment",Support Team
+50,"I was double charged for my flight booking through your partner merchant and also noticed an unauthorized subscription charge on the same statement, please resolve both urgently.",billing_dispute,no,"Billing Issue;Fraud Suspicion",Critical,"double charge;unauthorized subscription",Billing Department

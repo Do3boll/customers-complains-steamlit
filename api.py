@@ -117,6 +117,16 @@ def process_customer_message(payload: CustomerMessageRequest):
     )
 
 
+@app.get("/")
+def root():
+    return {
+        "status": "ok",
+        "service": "LLM-Based Customer Intelligence System",
+        "message": "Use /process-customer-message for POST requests or /health for a health check.",
+        "endpoints": ["/process-customer-message", "/health", "/docs"]
+    }
+
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
