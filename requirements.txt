@@ -1,2 +1,6 @@
 streamlit
 huggingface_hub
+fastapi
+uvicorn
+pydantic
+requests
