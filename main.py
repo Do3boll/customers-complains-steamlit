@@ -28,11 +28,11 @@ api_process = None
 
 def start_api():
     global api_process
-    print(f"Starting API on internal port {INTERNAL_API_PORT}...")
+    print(f"Starting API on internal port {INTERNAL_API_PORT} (loopback only)...")
     api_process = subprocess.Popen(
         [
             sys.executable, "-m", "uvicorn", "api:app",
-            "--host", "0.0.0.0",
+            "--host", "127.0.0.1",   # loopback only - keeps Render's port scanner from seeing it
             "--port", str(INTERNAL_API_PORT),
         ]
     )
