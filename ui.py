@@ -1,6 +1,4 @@
 """
-Streamlit version of the "Filed" complaint-intake site
-
 Run:
     pip install streamlit requests
     streamlit run ui.py

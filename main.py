@@ -1,11 +1,8 @@
 """
 main.py
--------
-Single entry point for Render: launches both services in one container.
 
-  - api.py  -> runs on an internal fixed port (8000), not exposed publicly.
-               ui.py calls it via http://localhost:8000/... since they
-               share the same container/network namespace.
+
+  - api.py  -> runs on an internal fixed port (8000)
   - ui.py   -> runs on Render's public $PORT, so it's the one users reach.
 
 Render start command should be:
