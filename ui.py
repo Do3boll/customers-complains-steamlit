@@ -11,13 +11,13 @@ Make sure the API is running first:
 import requests
 import streamlit as st
 
-API_URL = "https://your-app-name.onrender.com/process-customer-message"
+API_URL = "https://customers-complains-steamlit.onrender.com"
 
 st.set_page_config(page_title="Filed — Say what happened.", page_icon="⬛", layout="wide")
 
-# ---------------------------------------------------------------------------
+
 # Design tokens, translated into CSS injected via markdown
-# ---------------------------------------------------------------------------
+
 st.markdown(
     """
     <style>
@@ -267,9 +267,9 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# ---------------------------------------------------------------------------
+
 # Nav bar (full-bleed)
-# ---------------------------------------------------------------------------
+
 st.markdown('<div class="nav-bar full-bleed">', unsafe_allow_html=True)
 st.markdown(
     """
@@ -280,9 +280,9 @@ st.markdown(
 )
 st.markdown('</div>', unsafe_allow_html=True)
 
-# ---------------------------------------------------------------------------
+
 # Hero: form (left) + answer panel (right)
-# ---------------------------------------------------------------------------
+
 if "result" not in st.session_state:
     st.session_state.result = None
 if "loading" not in st.session_state:
@@ -403,9 +403,9 @@ with right:
 st.markdown("<br><br>", unsafe_allow_html=True)
 st.markdown("---")
 
-# ---------------------------------------------------------------------------
+
 # Editorial band
-# ---------------------------------------------------------------------------
+
 st.markdown(
     """
     <div style="max-width:720px; margin:2rem auto; text-align:center;">
@@ -424,9 +424,9 @@ st.markdown(
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-# ---------------------------------------------------------------------------
+
 # How it works grid
-# ---------------------------------------------------------------------------
+
 c1, c2, c3 = st.columns(3, gap="large")
 steps = [
     ("01", "Understand", "We read your message and work out what it's really about — even if it covers more than one issue."),
@@ -446,9 +446,9 @@ for col, (num, label, subhead) in zip([c1, c2, c3], steps):
             unsafe_allow_html=True,
         )
 
-# ---------------------------------------------------------------------------
+
 # Inverse CTA band
-# ---------------------------------------------------------------------------
+
 st.markdown(
     """
     <div class="inverse-band full-bleed">
