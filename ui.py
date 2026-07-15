@@ -1,22 +1,17 @@
 """
-site.py
--------
-Streamlit version of the "Filed" complaint-intake site, styled in the
-austere editorial (ZARA-inspired) design language: black/white,
-Helvetica + serif accent, zero border-radius, no gradients.
+Streamlit version of the "Filed" complaint-intake site
 
 Run:
     pip install streamlit requests
-    streamlit run site.py
+    streamlit run ui.py
 
 Make sure the API is running first:
-    uvicorn app:app --reload --port 8000
+    uvicorn api:app --reload --port 8000
 """
-
 import requests
 import streamlit as st
 
-API_URL = "http://localhost:8000/process-customer-message"
+API_URL = "https://your-app-name.onrender.com/process-customer-message"
 
 st.set_page_config(page_title="Filed — Say what happened.", page_icon="⬛", layout="wide")
 
